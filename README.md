@@ -2,6 +2,8 @@
 
 [![Actions Status](https://github.com/coursehero/hydrate/workflows/build/badge.svg)](https://github.com/coursehero/hydrate/actions)
 [![codecov](https://codecov.io/gh/coursehero/hydrate/branch/master/graph/badge.svg)](https://codecov.io/gh/coursehero/hydrate)
+[![Go Report Card](https://goreportcard.com/badge/github.com/coursehero/hydrate)](https://goreportcard.com/report/github.com/coursehero/hydrate)
+[![GoDoc](https://godoc.org/github.com/coursehero/hydrate?status.svg)](https://godoc.org/github.com/coursehero/hydrate)
 
 Hydrate is a package designed to work with [jinzhu/gorm](https://github.com/jinzhu/gorm) to provide an alternative to
 Preload to load hierarchies efficiently. 
