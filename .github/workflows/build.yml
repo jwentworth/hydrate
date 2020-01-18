@@ -51,3 +51,4 @@ jobs:
         comment-on-alert: true
         fail-on-alert: true
         alert-comment-cc-users: '@jwentworth'
+        github-token: ${{ secrets.GH_TOKEN }}
