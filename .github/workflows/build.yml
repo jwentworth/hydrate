@@ -13,12 +13,18 @@ jobs:
           MYSQL_ROOT_PASSWORD: password
         options: --health-cmd="mysqladmin ping" --health-interval=10s --health-timeout=5s --health-retries=5
     steps:
-    - name: Check out code into the Go module directory
+    - name: checkout
       uses: actions/checkout@v1
     - name: Build
       run: go build -v .
     - name: Test
-      run: TEST_DB_HOST=mysql go test -race -coverprofile=coverage.txt -covermode=atomic
+      run: go test -race -coverprofile=coverage.txt -covermode=atomic
+      env:
+        TEST_DB_HOST: 'mysql'
     - uses: codecov/codecov-action@v1
       with:
         token: ${{ secrets.CODECOV_TOKEN }} #required
+    - name: benchmarks
+      uses: bobheadxi/gobenchdata@v0.4.1
+      env:
+        TESTDB_HOST: 'mysql'
