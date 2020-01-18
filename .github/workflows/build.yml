@@ -4,7 +4,7 @@ jobs:
   build:
     name: build
     container: 
-      image: golang:1.13-buster
+      image: golang:1.13
     runs-on: ubuntu-latest
     services:
       mysql:
@@ -25,7 +25,7 @@ jobs:
       with:
         token: ${{ secrets.CODECOV_TOKEN }} #required
     - name: install cob
-      run: curl -sfL https://raw.githubusercontent.com/knqyf263/cob/master/install.sh | sudo sh -s -- -b /usr/local/bin
+      run: curl -sfL https://raw.githubusercontent.com/knqyf263/cob/master/install.sh | sh -s -- -b /usr/local/bin
       
     - name: Run Benchmark
       run: cob
