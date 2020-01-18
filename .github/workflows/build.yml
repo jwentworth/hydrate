@@ -28,3 +28,4 @@ jobs:
       uses: bobheadxi/gobenchdata@v0.4.1
       env:
         TESTDB_HOST: 'mysql'
+        GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
