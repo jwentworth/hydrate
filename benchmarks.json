@@ -1,0 +1,99 @@
+[
+  {
+    "Version": "c1548b735d20b258bde18f7670b377622cfd9550",
+    "Date": 1579329024,
+    "Tags": [
+      "ref=refs/heads/master"
+    ],
+    "Suites": [
+      {
+        "Goos": "linux",
+        "Goarch": "amd64",
+        "Pkg": "github.com/coursehero/hydrate",
+        "Benchmarks": [
+          {
+            "Name": "BenchmarkHydrate/S5:E10:I3/Preload-2",
+            "Runs": 548,
+            "NsPerOp": 2135927,
+            "Mem": {
+              "BytesPerOp": 169885,
+              "AllocsPerOp": 3282
+            }
+          },
+          {
+            "Name": "BenchmarkHydrate/S5:E10:I3/Query-2",
+            "Runs": 372,
+            "NsPerOp": 3124435,
+            "Mem": {
+              "BytesPerOp": 162925,
+              "AllocsPerOp": 8391
+            }
+          },
+          {
+            "Name": "BenchmarkHydrate/S5:E10:I3/MultiQuery-2",
+            "Runs": 813,
+            "NsPerOp": 1536691,
+            "Mem": {
+              "BytesPerOp": 72252,
+              "AllocsPerOp": 2476
+            }
+          },
+          {
+            "Name": "BenchmarkHydrate/S2000:E2:I2/Preload-2",
+            "Runs": 18,
+            "NsPerOp": 61157387,
+            "Mem": {
+              "BytesPerOp": 16370601,
+              "AllocsPerOp": 320516
+            }
+          },
+          {
+            "Name": "BenchmarkHydrate/S2000:E2:I2/Query-2",
+            "Runs": 8,
+            "NsPerOp": 140044634,
+            "Mem": {
+              "BytesPerOp": 9526278,
+              "AllocsPerOp": 497799
+            }
+          },
+          {
+            "Name": "BenchmarkHydrate/S2000:E2:I2/MultiQuery-2",
+            "Runs": 21,
+            "NsPerOp": 55297339,
+            "Mem": {
+              "BytesPerOp": 4802509,
+              "AllocsPerOp": 204253
+            }
+          },
+          {
+            "Name": "BenchmarkHydrate/S10:E10:I10/Preload-2",
+            "Runs": 397,
+            "NsPerOp": 3064878,
+            "Mem": {
+              "BytesPerOp": 318480,
+              "AllocsPerOp": 6549
+            }
+          },
+          {
+            "Name": "BenchmarkHydrate/S10:E10:I10/Query-2",
+            "Runs": 76,
+            "NsPerOp": 15131952,
+            "Mem": {
+              "BytesPerOp": 901707,
+              "AllocsPerOp": 53804
+            }
+          },
+          {
+            "Name": "BenchmarkHydrate/S10:E10:I10/MultiQuery-2",
+            "Runs": 540,
+            "NsPerOp": 2200555,
+            "Mem": {
+              "BytesPerOp": 125676,
+              "AllocsPerOp": 4854
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
