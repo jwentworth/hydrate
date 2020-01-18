@@ -1,0 +1,13 @@
+name: build
+on: [push]
+jobs:
+  build:
+    name: build
+    container: 
+      image: golang:1.13
+    runs-on: ubuntu-latest
+    steps:
+    - name: checkout
+      uses: actions/checkout@v1
+    - name: Build
+      run: go get -u go.bobheadxi.dev/gobenchdata/x/gobenchdata-web && gobenchdata-web --title "hydrate benchmarks"
